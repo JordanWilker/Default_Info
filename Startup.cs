@@ -67,6 +67,8 @@ namespace RPG_GAME
 
         services.AddTransient<ProfilesService>();
         services.AddTransient<ProfilesRepository>();
+        services.AddTransient<DefaultInfosRepository>();
+        services.AddTransient<DefaultInfosService>();
         services.AddScoped<IDbConnection>(x => CreateDbConnection());
         }
         // MAKE BD CONNECTION HERE
